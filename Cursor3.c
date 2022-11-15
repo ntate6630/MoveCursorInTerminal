@@ -42,7 +42,7 @@ int main(void)<
 
                printf("x = %3d,   y = %3d", x, y); /* Print coordinates */<
                printf("\x1b[%d;%df", y, x);      /* return to previous position
-               printf("\x1b[0m");            /* Reset and Show curso[Cr */<
+        /*       printf("\x1b[0m");    */        /* Reset and Show curso[Cr */<
                serialTX(0x1B);<
                serialTX('[');<
                serialTX('0');<
